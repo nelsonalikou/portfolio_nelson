@@ -28,4 +28,14 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+
+    /**
+     * @Route("/aPropos", name="aboutUs")
+     */
+    public function aboutUs(): Response
+    {
+        return $this->render('main/aboutUs.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 }
