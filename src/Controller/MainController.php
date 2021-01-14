@@ -8,7 +8,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MainController extends AbstractController
 {
-
     /**
      * @Route("/")
      */
@@ -25,17 +24,37 @@ class MainController extends AbstractController
     public function index(): Response
     {
         return $this->render('main/index.html.twig', [
-            'controller_name' => 'MainController',
+            'title' => 'Accueil',
         ]);
     }
 
     /**
-     * @Route("/aPropos", name="aboutUs")
+     * @Route("/formation", name="formation")
+     */
+    public function formations(): Response
+    {
+        return $this->render('main/formation.html.twig', [
+            'title' => 'Ma Formation',
+        ]);
+    }
+
+    /**
+     * @Route("/competences", name="competences")
+     */
+    public function competences(): Response
+    {
+        return $this->render('main/competences.html.twig', [
+            'title' => 'Mes Compétences',
+        ]);
+    }
+
+    /**
+     * @Route("/aboutUs", name="aboutUs")
      */
     public function aboutUs(): Response
     {
         return $this->render('main/aboutUs.html.twig', [
-            'controller_name' => 'MainController',
+            'title' => 'A Propos de Moi',
         ]);
     }
 }

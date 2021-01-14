@@ -23,14 +23,14 @@ ul {
 }
 
 .social-icon {
-    height: 70px;
-    width: 70px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 27px;
-    margin-right: 11px;
+    font-size: 20px;
+    margin-right: 7px;
     cursor: pointer;
 }
 
@@ -60,4 +60,8 @@ ul {
 
 .social-icon:hover i {
     transform: scale(1.4);
+}
+
+.social-icon a {
+    color: #FFFFFF;
 }

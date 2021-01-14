@@ -1,0 +1,76 @@
+  {% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/competences.css') }}">{% endblock %}
+
+{% block body %}
+    <div class="titre"><h1>{{ title }}</h1></div>
+
+    <hr class="featurette-divider">
+    <div class="titre">
+        <h3>Langages de programmation</h3>
+    </div>
+    <div class="slider">
+        <div class="slides6">
+            <div class="slide"><img src="{{ asset('images/competences/langages_programmation/php_144.png') }}" alt="php"  > </div>
+            <div class="slide"><img src="{{ asset('images/competences/langages_programmation/javascript_144.png') }}" alt="javaScript"  ></div>
+            <div class="slide"><img src="{{ asset('images/competences/langages_programmation/html_5_144.png') }}" alt="html"  ></div>
+            <div class="slide"><img src="{{ asset('images/competences/langages_programmation/css3.png') }}" alt="css"  ></div>
+            <div class="slide"><img src="{{ asset('images/competences/langages_programmation/python.png') }}" alt="python"  ></div>
+            <div class="slide"><img src="{{ asset('images/competences/langages_programmation/c_plus_plus.png') }}" alt="c++" ></div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="titre">
+        <h3>Frameworks</h3>
+    </div>
+    <div class="slider">
+        <div class="slides2">
+            <div class="slide"><img src="{{ asset('images/competences/frameworks/symfony_144.png') }}" alt="symfony"  ></div>
+            <div class="slide"><img src="{{ asset('images/competences/frameworks/react_native_144.png') }}" alt="react native"  ></div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="titre">
+        <h3>Systèmes d'exploitation</h3>
+    </div>
+     <div class="slider">
+        <div class="slides2">
+            <div class="slide"><img src="{{ asset('images/competences/systemes_exploitation/windows10.png') }}" alt="symfony"  ></div>
+            <div class="slide"><img src="{{ asset('images/competences/systemes_exploitation/linux.png') }}" alt="react native"  ></div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="titre">
+        <h3>Réseaux informatiques</h3>
+    </div>
+     <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="{{ asset('images/competences/reseau_informatique/cisco_512.png') }}" alt="cisco"  ></div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="titre">
+        <h3>Bureautique</h3>
+    </div>
+    <div class="slider">
+        <div class="slides6">
+            <div class="slide"><img src="{{ asset('images/competences/bureautique/microsoft_word_2019.png') }}" alt="microsoft_word_2019"  > </div>
+            <div class="slide"><img src="{{ asset('images/competences/bureautique/microsoft_excel_2019.png') }}" alt="microsoft_excel_2019"  ></div>
+            <div class="slide"><img src="{{ asset('images/competences/bureautique/microsoft_access_2019.png') }}" alt="microsoft_access_2019"  ></div>
+            <div class="slide"><img src="{{ asset('images/competences/bureautique/microsoft_powerpoint_2019.png') }}" alt="microsoft_powerpoint_2019"  ></div>
+            <div class="slide"><img src="{{ asset('images/competences/bureautique/microsoft_publisher_2019.png') }}" alt="microsoft_publisher_2019"  ></div>
+            <div class="slide"><img src="{{ asset('images/competences/bureautique/microsoft_outlook_2019.png') }}" alt="microsoft_outlook_2019" ></div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+{% endblock %}
+
+
