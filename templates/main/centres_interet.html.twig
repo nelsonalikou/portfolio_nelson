@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/aboutUs.css') }}}">{% endblock %}
+
+{% block body %}
+
+
+    <div class="titre" style="margin-top: 10px;text-align: center;"><h1>{{ title }}</h1></div>
+
+    <div class="container marketing">
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Cuisine <span class="text-muted">Toujours plus vite</span></h2>
+                <p class="lead">Mon activité la plus pratiquée loin de l'ordinateur. Elle m'as enseigné la patience et la polyvalence. 😋</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('images/divertissement/cuisine.jpg') }}" data-holder-rendered="true">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Natation <span class="text-muted">Toujours plus loin</span></h2>
+                <p class="lead">Un de mes sports favoris, je le pratique fréquement par pur plaisir.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('images/divertissement/natation.jpg') }}" data-holder-rendered="true">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Musculation <span class="text-muted">Toujours Plus</span></h2>
+                <p class="lead">Ma principale activité de remise en forme. Elle m'as appris la persévérance, cette vertue qui nous nous posse à aller jusqu'au bout de ce que l'on entreprend. Surtout si c'est de faire 30 pompes diamants à la suite. 🤣</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="{{ asset('images/divertissement/musculation.jpg') }}" data-holder-rendered="true">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+    </div>
+
+{% endblock %}
