@@ -2,6 +2,20 @@
     margin-top: 10px;
     text-align: center;
 }
+/*
+.groupement{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.description{
+    width: 400px;
+    height: 400px;
+}
+*/
+
 
 .slider{
     width : 400px;
@@ -20,6 +34,19 @@ img[src*="competences"]{
         width : 200px;
         height: 200px;
     }
+
+    /*
+    .description{
+        width: 200px;
+        height: 200px;
+    }
+
+    .groupement{
+        display: flex;
+        flex-direction: column;
+    }
+    */
+
     .slider{
         width : 200px;
         height: 200px;
@@ -83,6 +110,7 @@ img[src*="competences"]{
 
 .slide {
     float: left;
+    cursor: pointer;
 }
 
 /*Pour 2 slides*/
