@@ -49,7 +49,7 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route("/aboutUs", name="aboutUs")
+     * @Route("/about", name="about")
      */
     public function aboutUs(): Response
     {
@@ -62,6 +62,16 @@ class MainController extends AbstractController
      * @Route("/contact", name="contact")
      */
     public function contact(): Response
+    {
+        return $this->render('main/contact.html.twig', [
+            'title' => 'A Propos de Moi',
+        ]);
+    }
+
+    /**
+     * @Route("/sendMessage", name="sendMessage")
+     */
+    public function sendMessage(): Response
     {
         return $this->render('main/contact.html.twig', [
             'title' => 'A Propos de Moi',

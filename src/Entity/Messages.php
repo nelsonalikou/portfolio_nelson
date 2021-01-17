@@ -15,7 +15,7 @@ class Messages
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private $idMessage;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -35,11 +35,16 @@ class Messages
     /**
      * @ORM\Column(type="datetime")
      */
-    private $SendAt;
+    private $sendAt;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $active = false;
 
     public function getId(): ?int
     {
-        return $this->id;
+        return $this->idMessage;
     }
 
     public function getname(): ?string
@@ -78,15 +83,32 @@ class Messages
         return $this;
     }
 
-    public function getSendAt(): ?\DateTimeInterface
+    public function getsendAt(): ?\DateTimeInterface
     {
-        return $this->SendAt;
+        return $this->sendAt;
     }
 
-    public function setSendAt(\DateTimeInterface $SendAt): self
+    public function setsendAt(\DateTimeInterface $sendAt): self
     {
-        $this->SendAt = $SendAt;
+        $this->sendAt = $sendAt;
 
         return $this;
+    }
+
+    public function getActive(): ?bool
+    {
+        return $this->active;
+    }
+
+    public function setActive(bool $active): self
+    {
+        $this->active = $active;
+
+        return $this;
+    }
+
+    public function getIdMessage(): ?int
+    {
+        return $this->idMessage;
     }
 }
