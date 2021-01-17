@@ -9,7 +9,7 @@
     <div id="carouselExemple" class="carousel slide" data-ride="carousel" data-interval="3000">
 
         {% for message in app.flashes('message') %}
-            <div class="p-3 my-2 rounded-2 success">{{ message }}</div>
+            <div class="p-3 my-2 rounded-2 success" style="background-color: greenyellow;">{{ message }}</div>
         {% endfor %}
 
         <ol class="carousel-indicators">
