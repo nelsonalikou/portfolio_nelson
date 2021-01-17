@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\MessagesRepository;
+use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -83,12 +84,12 @@ class Messages
         return $this;
     }
 
-    public function getsendAt(): ?\DateTimeInterface
+    public function getsendAt(): ?DateTimeInterface
     {
         return $this->sendAt;
     }
 
-    public function setsendAt(\DateTimeInterface $sendAt): self
+    public function setsendAt(DateTimeInterface $sendAt): self
     {
         $this->sendAt = $sendAt;
 

@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class MainController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="home")
      */
     public function home(): Response
     {
@@ -58,23 +58,13 @@ class MainController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/contact", name="contact")
-     */
+    /*
     public function contact(): Response
     {
         return $this->render('main/contact.html.twig', [
             'title' => 'A Propos de Moi',
         ]);
     }
+    */
 
-    /**
-     * @Route("/sendMessage", name="sendMessage")
-     */
-    public function sendMessage(): Response
-    {
-        return $this->render('main/contact.html.twig', [
-            'title' => 'A Propos de Moi',
-        ]);
-    }
 }
