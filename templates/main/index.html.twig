@@ -2,9 +2,41 @@
 
 {% block title %}Accueil{% endblock %}
 
-{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/carousel.css') }}">{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
+    <style>
+        .ml9 {
+            position: relative;
+            font-weight: 200;
+            font-size: 4em;
+            display: flex;
+            justify-content: center;
+        }
+
+        .ml9 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.2em;
+            padding-right: 0.05em;
+            padding-bottom: 0.1em;
+            overflow: hidden;
+        }
+
+        .ml9 .letter {
+            transform-origin: 50% 100%;
+            display: inline-block;
+            line-height: 1em;
+        }
+    </style>
+{% endblock %}
 
 {% block body %}
+
+    <h1 class="ml9">
+        <span class="text-wrapper">
+            <span class="letters">Mes Réalisations</span>
+        </span>
+    </h1>
 
     <div id="carouselExemple" class="carousel slide" data-ride="carousel" data-interval="3000">
 
@@ -49,4 +81,12 @@
 
     </div>
 
+{% endblock %}
+
+
+
+{% block javascripts %}
+    <!--effet du texte page d'accueil -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="{{ asset('js/effet_texte.js') }}"></script>
 {% endblock %}
