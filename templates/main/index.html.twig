@@ -13,6 +13,12 @@
             justify-content: center;
         }
 
+        @media screen and (max-width: 600px) {
+            .ml9 {
+            font-size: 2em;
+            }
+        }
+
         .ml9 .text-wrapper {
             position: relative;
             display: inline-block;
@@ -26,6 +32,11 @@
             transform-origin: 50% 100%;
             display: inline-block;
             line-height: 1em;
+        }
+
+        .carousel-caption{
+            background-color: rgba(0,0,0,0.5) ;
+            font-size: 2em;
         }
     </style>
 {% endblock %}
@@ -56,16 +67,28 @@
             <div class="carousel-item active">
                 <img src="{{ asset('images/carousel/confineat2.PNG') }}"
                      class="d-block" alt="confineat">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Confineat</h3>
+                    <p>Petit extrait de la page d'accueil du site Web</p>
+                </div>
             </div>
 
             <div class="carousel-item">
                 <img src="{{ asset('images/carousel/admin_bd.PNG') }}"
                      class="d-block" alt="premier site web">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p>Présentation du métier Administateur base de données.</p>
+                </div>
             </div>
 
             <div class="carousel-item">
                 <img src="{{ asset('images/carousel/Capture_decran_353.png') }}"
                      class="d-block" alt="labyrinth">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Labyrinth</h5>
+                    <p>Developpé avec A-Frame</p>
+                </div>
             </div>
 
         </div>
