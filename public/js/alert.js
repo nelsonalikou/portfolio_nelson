@@ -56,7 +56,7 @@ function compteur()
 /**
  * Fonction de retour en haut de la page.
  */
-jQuery(function(){
+/*jQuery(function(){
     $(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 200 ) {
@@ -67,3 +67,23 @@ jQuery(function(){
         });
     });
 });
+*/
+
+/**
+ * Fonction de retour en haut de la page.
+ */
+window.addEventListener('scroll', e => {
+    var el = document.getElementById('jsScroll');
+    if(window.scrollY > 200) {
+        el.classList.add('visible');
+    } else {
+        el.classList.remove('visible');
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

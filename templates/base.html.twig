@@ -30,6 +30,8 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 background-attachment: fixed;
+
+                /*background-image: linear-gradient( 109.6deg,  rgba(17,151,147,1) 11.2%, rgba(154,214,212,1) 55.4%, rgba(255,233,171,1) 100.2% );*/
             }
 
             #scrollUp
@@ -38,6 +40,46 @@
                 bottom : 10px;
                 right: -100px;
                 opacity: 0.5;
+            }
+
+            .scroll {
+                cursor: pointer;
+                width: 70px;
+                height: 70px;
+                position: fixed;
+                bottom: 40px;
+                right: -80px;
+                border-radius: 100%;
+                background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+                color: #fff;
+                font-size: 44px;
+                font-weight: bold;
+                text-align: center;
+                box-shadow: 0 0 5px 0px #888;
+                transition: 300ms;
+            }
+
+            /*.scroll i {
+                margin-top: 10px;
+                text-shadow: 0 0 2px #fff;
+            }*/
+
+            .scroll:hover i {
+                animation-name: rotate;
+                animation-duration: 300ms;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+            @keyframes rotate {
+                from {margin-top: 15px}
+                to {margin-top: 5px}
+            }
+
+            .visible {
+                right: 30px;
+                transition: all 400ms;
+                transform: rotate(360deg)
             }
         </style>
 
@@ -52,8 +94,11 @@
         {{ include('AllPagesComponents/footer.html.twig') }}
 
 
-        <div id="scrollUp">
+        <!--<div id="scrollUp">
             <a href="#top"><img src="{{ asset('images/logo/to_top.png') }}" alt="boutton_retour_entete"/></a>
+        </div>-->
+        <div id="jsScroll" class="scroll" onclick="scrollToTop();">
+            <i class="fa fa-angle-up"></i>
         </div>
 
         <!--Bootstrap 5 JS-->
@@ -65,8 +110,8 @@
         <!--Alert Noir-->
         <script src="{{ asset('sweet_alert/node_modules/sweetalert2/dist/sweetalert2.min.js') }}"></script>
 
-        <!--Importer JQuery-->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <!--Importer JQuery
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>-->
 
         <script src="{{ asset('js/alert.js') }}"></script>
 
