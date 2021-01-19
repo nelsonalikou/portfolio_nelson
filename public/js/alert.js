@@ -1,3 +1,6 @@
+/**
+ * Message d'alert personnalisé en cas d'echec.
+ */
 function  sweetAlertError(){
     Swal.fire('Désolé...', 'Une erreur est survenue !', 'error')
 }
@@ -29,11 +32,17 @@ function sweetAlertSuccess(){
     })
 }
 
+/**
+ * Message d'alert personnalisé en cas de succes.
+ */
 function  sweetAlertSuccess2(){
     Swal.fire('Bravooo...', 'Téléchargement effectué !', 'success')
 }
 
 //var x=0;
+/**
+ * Compteur du nombre de clicks
+ */
 function compteur()
 {
     var elt = document.getElementById('nbClicks');
@@ -42,3 +51,19 @@ function compteur()
     x = x+1;
     document.getElementById('nbClicks').innerHTML = x;
 }
+
+
+/**
+ * Fonction de retour en haut de la page.
+ */
+jQuery(function(){
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200 ) {
+                $('#scrollUp').css('right','10px');
+            } else {
+                $('#scrollUp').removeAttr( 'style' );
+            }
+        });
+    });
+});
