@@ -32,3 +32,13 @@ function sweetAlertSuccess(){
 function  sweetAlertSuccess2(){
     Swal.fire('Bravooo...', 'Téléchargement effectué !', 'success')
 }
+
+//var x=0;
+function compteur()
+{
+    var elt = document.getElementById('nbClicks');
+    var monTexte = elt.innerText || elt.textContent;
+    var x = parseInt(monTexte);
+    x = x+1;
+    document.getElementById('nbClicks').innerHTML = x;
+}

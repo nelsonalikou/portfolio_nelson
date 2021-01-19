@@ -37,7 +37,7 @@
 
         .carousel-caption{
             background-color: rgba(0,0,0,0.5) ;
-            font-size: 2em;
+            font-size: 1.2em;
         }
 
     </style>
@@ -61,6 +61,7 @@
             <li data-target="#carouselExemple" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExemple" data-slide-to="1"></li>
             <li data-target="#carouselExemple" data-slide-to="2"></li>
+            <li data-target="#carouselExemple" data-slide-to="3"></li>
         </ol>
 
 
@@ -69,28 +70,45 @@
             <div class="carousel-item active">
                 <img src="{{ asset('images/carousel/confineat2.PNG') }}"
                      class="d-block" alt="confineat">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Confineat</h3>
-                    <p>Petit extrait de la page d'accueil du site Web</p>
-                </div>
+                <a href="https://confineat.000webhostapp.com/index.php?action=login" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Confineat</h3>
+                        <p>Petit extrait de la page d'accueil du site Web</p>
+                    </div>
+                </a>
             </div>
 
             <div class="carousel-item">
                 <img src="{{ asset('images/carousel/admin_bd.PNG') }}"
                      class="d-block" alt="premier site web">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5></h5>
-                    <p>Présentation du métier Administateur base de données.</p>
-                </div>
+                <a href="https://gitlab.com/alikou_nelson/site-web" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>Présentation du métier Administateur base de données.</p>
+                    </div>
+                </a>
             </div>
 
             <div class="carousel-item">
-                <img src="{{ asset('images/carousel/Capture_decran_353.png') }}"
+                <img src="{{ asset('images/carousel/labyrinth.png') }}"
                      class="d-block" alt="labyrinth">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Labyrinth</h5>
-                    <p>Developpé avec A-Frame</p>
-                </div>
+                <a href="https://gitlab.com/alikou_nelson/projet_web_3d" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Labyrinth</h5>
+                        <p>Developpé avec A-Frame</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <img src="{{ asset('images/carousel/solitaire.png') }}"
+                     class="d-block" alt="labyrinth">
+                <a href="https://gitlab.com/alikou_nelson/projet-poo" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Labyrinth</h5>
+                        <p>Developpé avec A-Frame</p>
+                    </div>
+                </a>
             </div>
 
         </div>
