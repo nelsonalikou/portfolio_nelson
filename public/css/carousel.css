@@ -6,11 +6,68 @@ body {
 
 #carouselExemple {
     width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 30px auto 0 auto;
 }
 
 .carousel-item img {
     width: 100%;
     height: auto;
 }
+
+
+/*Style page d'accueil*/
+
+/*p::first-letter, h3::first-letter{
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+.ml9 {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .ml9 {
+        font-size: 2em;
+    }
+}
+
+.ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.carousel-caption{
+    background-color: rgba(0,0,0,0.5) ;
+    font-size: 1.2em;
+}
+
+.descriptions{
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    .descriptions{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    h3{
+        color: rgba(0,0,0,0.5);
+    }
+} */
