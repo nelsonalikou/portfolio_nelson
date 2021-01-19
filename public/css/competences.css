@@ -29,89 +29,6 @@ img[src*="competences"]{
     height: 400px;
 }
 
-@media screen and (max-width: 450px) {
-    img[src*="competences"]{
-        width : 200px;
-        height: 200px;
-    }
-
-    /*
-    .description{
-        width: 200px;
-        height: 200px;
-    }
-
-    .groupement{
-        display: flex;
-        flex-direction: column;
-    }
-    */
-    .slider{
-        width : 200px;
-        height: 200px;
-    }
-
-    /*Pour 2 slides*/
-    .slides2{
-        width: calc(200px * 2);
-        animation: move2 4s infinite;
-    }
-
-    @keyframes move2 {
-        0% {
-            transform: translateX(0px);
-        }
-        25% {
-            transform: translateX(0px);
-        }
-        50% {
-            transform: translateX(-200px);
-        }
-        75% {
-            transform: translateX(-200px);
-        }
-        100% {
-            transform: translateX(0px);
-        }
-    }
-
-    /*Pour 6 slides*/
-    .slides6{
-        width: calc(200px * 6);
-        animation: move6 12s infinite;
-    }
-
-    @keyframes move6 {
-        0% {
-            transform: translateX(0px);
-        }
-        16% {
-            transform: translateX(-200px);
-        }
-        33% {
-            transform: translateX(-400px);
-        }
-        49% {
-            transform: translateX(-600px);
-        }
-        65% {
-            transform: translateX(-800px);
-        }
-        81% {
-            transform: translateX(-1000px);
-        }
-        100% {
-            transform: translateX(0px);
-        }
-    }
-}
-
-
-.slide {
-    float: left;
-    cursor: pointer;
-}
-
 /*Pour 2 slides*/
 .slides2{
     width: calc(400px * 2);
@@ -165,6 +82,91 @@ img[src*="competences"]{
         transform: translateX(0px);
     }
 }
+
+@media screen and (max-width: 450px) {
+    img[src*="competences"]{
+        width : 200px;
+        height: 200px;
+    }
+
+    /*
+    .description{
+        width: 200px;
+        height: 200px;
+    }
+
+    .groupement{
+        display: flex;
+        flex-direction: column;
+    }
+    */
+    .slider{
+        width : 200px;
+        height: 200px;
+    }
+
+    /*Pour 2 slides*/
+    .slides2{
+        width: calc(200px * 2);
+        animation: move52 4s infinite;
+    }
+
+    @keyframes move52 {
+        0% {
+            transform: translateX(0px);
+        }
+        25% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(-200px);
+        }
+        75% {
+            transform: translateX(-200px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    /*Pour 6 slides*/
+    .slides6{
+        width: calc(200px * 6);
+        animation: move56 12s infinite;
+    }
+
+    @keyframes move56 {
+        0% {
+            transform: translateX(0px);
+        }
+        16% {
+            transform: translateX(-200px);
+        }
+        33% {
+            transform: translateX(-400px);
+        }
+        49% {
+            transform: translateX(-600px);
+        }
+        65% {
+            transform: translateX(-800px);
+        }
+        81% {
+            transform: translateX(-1000px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}
+
+
+.slide {
+    float: left;
+    cursor: pointer;
+}
+
+
 
 
 
