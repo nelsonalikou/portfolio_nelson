@@ -55,14 +55,9 @@
                 font-size: 44px;
                 font-weight: bold;
                 text-align: center;
-                box-shadow: 0 0 5px 0px #888;
+                box-shadow: 0 0 5px 0 #888;
                 transition: 300ms;
             }
-
-            /*.scroll i {
-                margin-top: 10px;
-                text-shadow: 0 0 2px #fff;
-            }*/
 
             .scroll:hover i {
                 animation-name: rotate;
@@ -93,10 +88,6 @@
 
         {{ include('AllPagesComponents/footer.html.twig') }}
 
-
-        <!--<div id="scrollUp">
-            <a href="#top"><img src="{{ asset('images/logo/to_top.png') }}" alt="boutton_retour_entete"/></a>
-        </div>-->
         <div id="jsScroll" class="scroll" onclick="scrollToTop();">
             <i class="fa fa-angle-up"></i>
         </div>
@@ -109,9 +100,6 @@
 
         <!--Alert Noir-->
         <script src="{{ asset('sweet_alert/node_modules/sweetalert2/dist/sweetalert2.min.js') }}"></script>
-
-        <!--Importer JQuery
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>-->
 
         <script src="{{ asset('js/alert.js') }}"></script>
 

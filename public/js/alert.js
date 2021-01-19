@@ -52,23 +52,6 @@ function compteur()
     document.getElementById('nbClicks').innerHTML = x;
 }
 
-
-/**
- * Fonction de retour en haut de la page.
- */
-/*jQuery(function(){
-    $(function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 200 ) {
-                $('#scrollUp').css('right','10px');
-            } else {
-                $('#scrollUp').removeAttr( 'style' );
-            }
-        });
-    });
-});
-*/
-
 /**
  * Fonction de retour en haut de la page.
  */

@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
     <link rel="stylesheet" href="{{ asset('sweet_alert/node_modules/sweetalert2/dist/sweetalert2.css') }}">
     <style>
+        h3{
+            color: rgba(0,0,0,0.5);
+        }
+
+        p::first-letter, h3::first-letter{
+            margin-left: 10px;
+            font-size: 1.5em;
+        }
+
         .ml9 {
             position: relative;
             font-weight: 200;
@@ -40,6 +49,19 @@
             font-size: 1.2em;
         }
 
+        .descriptions{
+            display: none;
+        }
+
+        @media screen and (max-width: 450px) {
+            .descriptions{
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+            }
+        }
+
+
     </style>
 {% endblock %}
 
@@ -73,7 +95,7 @@
                 <a href="https://confineat.000webhostapp.com/index.php?action=login" >
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Confineat</h3>
-                        <p>Petit extrait de la page d'accueil du site Web</p>
+                        <p>Petit extrait de la page d'accueil du site Web. Le site a été développé avec HTML, CSS, JavaScript pour le Front-end et PHP, AJAX, SQL pour le Back-end.</p>
                     </div>
                 </a>
             </div>
@@ -83,8 +105,8 @@
                      class="d-block" alt="premier site web">
                 <a href="https://gitlab.com/alikou_nelson/site-web" >
                     <div class="carousel-caption d-none d-md-block">
-                        <h5></h5>
-                        <p>Présentation du métier Administateur base de données.</p>
+                        <h3></h3>
+                        <p>Présentation du métier Administateur base de données. Utilisation de HTML et CSS.</p>
                     </div>
                 </a>
             </div>
@@ -94,8 +116,8 @@
                      class="d-block" alt="labyrinth">
                 <a href="https://gitlab.com/alikou_nelson/projet_web_3d" >
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Labyrinth</h5>
-                        <p>Developpé avec A-Frame</p>
+                        <h3>Labyrinth</h3>
+                        <p>Developpé avec A-Frame, Python et JavaScript.</p>
                     </div>
                 </a>
             </div>
@@ -105,8 +127,8 @@
                      class="d-block" alt="labyrinth">
                 <a href="https://gitlab.com/alikou_nelson/projet-poo" >
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Labyrinth</h5>
-                        <p>Developpé avec A-Frame</p>
+                        <h3>Solitaire</h3>
+                        <p>Entièrement développé en PHP</p>
                     </div>
                 </a>
             </div>
@@ -121,6 +143,30 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+
+    </div>
+
+    <div class="descriptions">
+
+        <div class="description">
+            <h3>Confineat</h3>
+            <p>Petit extrait de la page d'accueil du site Web. Le site a été développé avec HTML, CSS, JavaScript pour le Front-end et PHP, AJAX, SQL pour le Back-end.</p>
+        </div>
+
+        <div class="description">
+            <h3>Administrateur Base de données</h3>
+            <p>Présentation du métier Administateur base de données. Utilisation de HTML et CSS.</p>
+        </div>
+
+        <div class="description">
+            <h3>Labyrinth</h3>
+            <p>Developpé avec A-Frame, Python et JavaScript.</p>
+        </div>
+
+        <div class="description">
+            <h3>Solitaire</h3>
+            <p>Entièrement développé en PHP</p>
+        </div>
 
     </div>
 
