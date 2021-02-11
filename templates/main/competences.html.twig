@@ -7,6 +7,20 @@
 {% block body %}
     <div class="titre"><h1>{{ title }}</h1></div>
 
+
+    <hr class="featurette-divider">
+    <div class="titre">
+        <h3>Langage de description de pages web</h3>
+    </div>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"> <img src="{{ asset('images/competences/langages_programmation/html.png') }}" alt="html"  > </a></div>
+            <!--<div class="slide"><a href="https://developer.mozilla.org/fr/docs/Web/CSS"> <img src="{{ asset('images/competences/langages_programmation/css3.png') }}" alt="css"  > </a></div> -->
+        </div>
+    </div>
+
+
+
     <hr class="featurette-divider">
     <div class="titre">
         <h3>Langages de programmation</h3>
@@ -14,12 +28,12 @@
     <!--<div class="groupement"> -->
         <div class="slider">
             <div class="slides6">
-                <div class="slide"><img src="{{ asset('images/competences/langages_programmation/php.png') }}" alt="php"  > </div>
-                <div class="slide"><img src="{{ asset('images/competences/langages_programmation/javascript_logo.png') }}" alt="javaScript"  ></div>
-                <div class="slide"><img src="{{ asset('images/competences/langages_programmation/html.png') }}" alt="html"  ></div>
-                <div class="slide"><img src="{{ asset('images/competences/langages_programmation/css3.png') }}" alt="css"  ></div>
-                <div class="slide"><img src="{{ asset('images/competences/langages_programmation/python.png') }}" alt="python"  ></div>
-                <div class="slide"><img src="{{ asset('images/competences/langages_programmation/c_plus_plus_logo.png') }}" alt="c++" ></div>
+                <div class="slide"> <a href="https://fr.wikipedia.org/wiki/PHP"> <img src="{{ asset('images/competences/langages_programmation/php.png') }}" alt="php"  > </a> </div>
+                <div class="slide"> <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"> <img src="{{ asset('images/competences/langages_programmation/javascript_logo.png') }}" alt="javaScript"  > </a></div>
+                <div class="slide"> <a href="https://www.java.com/fr/"> <img src="{{ asset('images/competences/langages_programmation/java.png') }}" alt="java"  > </a> </div>
+                <div class="slide"> <a href="https://developer.mozilla.org/fr/docs/Web/CSS"> <img src="{{ asset('images/competences/langages_programmation/css3.png') }}" alt="css"  > </a> </div>
+                <div class="slide"> <a href="https://fr.wikipedia.org/wiki/Python_(langage)"> <img src="{{ asset('images/competences/langages_programmation/python.png') }}" alt="python"  > </a> </div>
+                <div class="slide"> <a href="https://fr.wikipedia.org/wiki/C%2B%2B"> <img src="{{ asset('images/competences/langages_programmation/c_plus_plus_logo.png') }}" alt="c++" > </a> </div>
             </div>
         </div>
         <!--
@@ -72,7 +86,7 @@
     <div class="slider">
         <div class="slides2">
             <div class="slide"><a href="https://symfony.com/"> <img src="{{ asset('images/competences/frameworks/symfony_512.png') }}" alt="symfony"> </a></div>
-            <div class="slide"><img src="{{ asset('images/competences/frameworks/logo_react.png') }}" alt="react native"  ></div>
+            <div class="slide"><a href="https://fr.reactjs.org/"> <img src="{{ asset('images/competences/frameworks/logo_react.png') }}" alt="react native"  > </a></div>
         </div>
     </div>
 
@@ -83,7 +97,7 @@
      <div class="slider">
         <div class="slides2">
             <div class="slide"><a href="https://fr.wikipedia.org/wiki/Windows_10"> <img src="{{ asset('images/competences/systemes_exploitation/windows10.png') }}" alt="symfony"> </a></div>
-            <div class="slide"><img src="{{ asset('images/competences/systemes_exploitation/linux.png') }}" alt="react native"  ></div>
+            <div class="slide"><a href="https://fr.wikipedia.org/wiki/Linux"> <img src="{{ asset('images/competences/systemes_exploitation/linux.png') }}" alt="react native"  > </a></div>
         </div>
     </div>
 
@@ -93,7 +107,7 @@
     </div>
      <div class="slider">
         <div class="slides">
-            <div class="slide"><img src="{{ asset('images/competences/reseau_informatique/cisco_512.png') }}" alt="cisco"  ></div>
+            <div class="slide"><a href="https://www.cisco.com/c/fr_fr/index.html"> <img src="{{ asset('images/competences/reseau_informatique/cisco_512.png') }}" alt="cisco"  ></a></div>
         </div>
     </div>
 
@@ -103,8 +117,8 @@
     </div>
     <div class="slider">
         <div class="slides2">
-            <div class="slide"><a href="#"> <img src="{{ asset('images/competences/ihm/figma.png') }}" alt="symfony"> </a></div>
-            <div class="slide"><a href="#"> <img src="{{ asset('images/competences/ihm/qtcreator.png') }}" alt="react native"  > </a></div>
+            <div class="slide"><a href="https://www.figma.com/"> <img src="{{ asset('images/competences/ihm/figma.png') }}" alt="symfony"> </a></div>
+            <div class="slide"><a href="https://www.qt.io/"> <img src="{{ asset('images/competences/ihm/qtcreator.png') }}" alt="react native"  > </a></div>
         </div>
     </div>
 
@@ -126,9 +140,10 @@
     <hr class="featurette-divider">
 
     <div class="CV" style="margin: 20px auto; display: flex; justify-content: center; width: 300px; flex-direction: column;">
-        <a class="btn btn-primary btn-block" onclick="sweetAlertSuccess2();compteur();" href="{{ asset('to_download/CV_Stage_Nelson_ALIKOU.pdf') }}" download style="text-decoration: none; color: black;">Télécharger mon CV</a>
+        <a class="btn btn-primary btn-block" onclick="sweetAlertSuccess2();compteur();" href="{{ asset('to_download/CV_Nelson_ALIKOU.pdf') }}" download style="text-decoration: none; color: black;">Télécharger mon CV</a>
         <!--<p>Nombre de Téléchargements  <b id='nbClicks'>0</b></p>-->
     </div>
+
 
 {% endblock %}
 
